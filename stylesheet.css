@@ -1,0 +1,16 @@
+@charset "UTF-8";
+table,th,td{
+	text-aling:center;
+	border:1px solid;
+}
+th{
+	color:blue;
+	font-weight:bold;
+	font-size:16pt;
+}
+.med{
+	colspan:2;
+}
+.res{
+	font-weight:bold;
+}
