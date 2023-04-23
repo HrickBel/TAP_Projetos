@@ -1,0 +1,24 @@
+﻿:root{
+}
+body{
+    margin: 0;
+    font-family:Arial;
+}
+
+.menu{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    background-color:#0e9be2;
+    & a{
+           margin-right:30px;
+           font-size:1.1vw;
+           text-decoration:none;
+           color:#fafafa;
+       }
+
+    & a:hover{
+        font:bolder;
+        font-size:1.8vw;
+    }
+}
