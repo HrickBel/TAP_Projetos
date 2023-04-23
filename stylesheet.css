@@ -1,35 +1,34 @@
 ﻿:root{
-    --displayDirection:row;
-    --default:#313131;
-    --defFont:arial;
+
 }
+
 body {
     font-family: var(--defFont);
     /*background: var(--default);*/
 }
-a{
-    text-decoration:none;
-    color:black;
+
+.dropdown {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    & a{
+        display:block;
+        margin-right:2.8vw;
+        text-decoration:none;
+        font-size:1.8vw;
+    }
+    & svg{
+        margin-right:3vw;
+    }
 }
-.header {
-    border-color: black;
-    border:0.8px solid;
-    border-radius: 30px;
+.dropdown{
+    position:sticky;
+    position:relative;
 }
-#layout{
-    display:flex;
-    flex-direction:var(--displayDirection);
-    align-items:center;
-    list-style-type:none;
+.listSubitem-product, .listSubitem-solutions, .listSubitem-support, .listItem-search, .listItem-lang {
+    display: none;
 }
-#layout a{
+.dropdown:hover {
     display:block;
-    margin-right:5vw;
-    font-size:2.8vw;
-}
-#layout svg{
-    margin-right:3.5vw;
-}
-#idiom,#search,.layout{
-    display:none;
 }

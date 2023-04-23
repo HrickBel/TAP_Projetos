@@ -2,141 +2,87 @@
 
 <html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ficction tech interprise" />
-    <meta name="keywords" content="technology, inovation, solutions, processor, Graphic Card, education" />
-    <meta name="author" content="Henrique Belém" />
-    <link href="stylesheet.css" rel="stylesheet" />
-    <title>Neo - TheNeo4U</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="ficction tech interprise" />
+	<meta name="keywords" content="technology, inovation, solutions, processor, Graphic Card, education" />
+	<meta name="author" content="Henrique Belém" />
+	<link href="stylesheet.css" rel="stylesheet" />
+	<title>Neo - TheNeo4U</title>
 </head>
 <body>
-    <script type="text/javascript" src="main.js"></script>
-    <header>
-        <div class="header">
-            <ul id="layout">
-                <svg xmlns="http://www.w3.org/2000/svg" width="280px" height="105px">
-                    </svg>
-                <li>
-                    <a href="#" class="layoutSubItem">Produtcs</a>
-                </li>
-                <li> 
-                    <a href="#" class="layoutSubItem">Solutions</a>
-                </li>
-                <li>
-                    <a href="#" class="layoutSubItem">Support</a>
-                </li>
-                <li>
-                    <a href="#" class="layoutSubItem">Shop</a>
-                </li>
-                <li>
-                    <div>
-                        <img src="#" alt="alternate idiom" onclick="showLangPanel" />
-                        <img src="#" alt="search" onclick="" />
-                    </div>
-                </li>
-            </ul>
-            <div id="idiom">
-                <ul class="lang">
-                    <li>
-                        <a href="#">Portugues</a>
-                    </li>
-                    <li>
-                        <a href="#">English</a>
-                    </li>
-                    <li>
-                        <a href="#">Russian</a>
-                    </li>
-                    <li>
-                        <a href="#">Japanese</a>
-                    </li>
-                </ul>
-                </div>
-            <div id="search">
-                <form action="search.JSP" method="post">
-                    <img src="#" alt="searchIco" />
-                    <input type="text" id="search" placeholder="search" />
-                    <button id="txtBusca">search</button>
-                </form>
-                <ul>
-                    <li>Processor</li>
-                    <li>Graphic card</li>
-                    <li>Education</li>
-                    <li>Solution</li>
-                    <li>Projects </li>
-                </ul>
-            </div>
-        </div>
-    </header>
+	<script type="text/javascript" src="main.js"></script>
+	<header>
+		<div class="dropdown">
+			<svg xmlns="http://www.w3.org/2000/svg" width="280px" height="105px">
+			<text x="40" y="75" font-size="4.5vw">LOGO</text>
+			</svg>
 
-    <div class="main">
-        <div class="layout">
-            <div class="topic">
-                <h2>sample</h2><hr />
-                <div class="collum"></div>
-                <div class="collum"></div>
-                <div class="collum"></div>
-            </div>
-            <div class="topic">
-                <h2>sample</h2><hr />
-                <div class="collum"></div>
-                <div class="collum"></div>
-                <div class="collum"></div>
-            </div>
-            <div class="topic">
-                <h2>sample</h2><hr />
-                <div class="collum"></div>
-                <div class="collum"></div>
-                <div class="collum"></div>
-            </div>
-            <div class="topic">
-                <h2>sample</h2><hr />
-                <div class="collum"></div>
-                <div class="collum"></div>
-                <div class="collum"></div>
-            </div>
-        </div>
-        <div class="slideShow">
-            <div class="slide">
-                <h3>title1</h3>
-                <img src="#" alt="highlight1" />
-                <p>sample-text1</p>
-            </div>
-            <div class="slide">
-                <h3>title2</h3>
-                <img src="#" alt="highlight2" />
-                <p>sample-text2</p>
-            </div>
-            <div class="slide">
-                <h3>title3</h3>
-                <img src="#" alt="highlight3" />
-                <p>sample-text3</p>
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="60px" height="60px"></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="60px" height="60px"></svg>
-        </div>
-    </div>
-    <section>
+			<a class="listSubitem-product" href="#">Produtcs</a>
+			<div class="c-listSubitem"><h2>sample</h2><hr /></div>
+
+			<a class="listSubitem-solutions" href="#">Solutions</a>
+			<div class="c-listSubitem"><h2>sample</h2><hr /></div>
+			
+			<a class="listSubitem-support" href="#">Support</a>
+			<div class="c-listSubitem	"><h2>sample</h2><hr /></div>
+			
+			<a class="listItem-shop" href="#">Shop</a>
+			<div class="c-listSubitem"><h2>sample</h2><hr /></div>
+
+			<a class="listItem-search" href="#"><img src="#" alt="search" /></a>
+
+			<a class="listItem-lang" href="#"><img src="#" alt="alternate idiom" /></a>
+
+			<div class="c-listSubitem-lang">
+				<ul>
+					<li>
+						<a href="#">Portugues</a>
+					</li>
+
+					<li>
+						<a href="#">English</a>
+					</li>
+
+					<li>
+						<a href="#">Russian</a>
+					</li>
+
+					<li>
+						<a href="#">Japanese</a>
+					</li>
+
+				</ul>
+			</div>
+
+			<div class="c-listSubitem">
+				<form action="search.JSP" method="post">
+					<img src="#" alt="searchIco" />
+					<input type="text" id="search" placeholder="search" />
+					<button id="txtBusca">search</button>
+				</form>
+			</div>
+		</div>
+	</header>
+
+    <div class="slideShow">
+        <div class="slide"><img src="" alt="slide" /><p class="caption"></p></div>
+        <div class="slide"><img src="" alt="slide" /><p class="caption"></p></div>
+        <div class="slide"><img src="" alt="slide" /><p class="caption"></p></div>
+	</div>
+    <div class="products">
         <h2>Most searched</h2>
-        <div id="ShowProducts">
-            <div class="product"><img src="#" alt="prod1" /><p>prod-name1</p></div>
-            <div class="product"><img src="#" alt="prod2" /><p>prod-name2</p></div>
-            <div class="product"><img src="#" alt="prod3" /><p>prod-name3</p></div>
-        </div>
-        <div id="projects">
-            <h2>Projects</h2>
-            <div class="collum"><h3>matter1</h3></div>
-            <div class="collum"><h3>matter2</h3></div>
-            <div class="collum"><h3>matter3</h3></div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div id="contacts">
-            <div class="collum"><h4></h4></div>
-            <div class="collum"><h4></h4></div>
-            <div class="collum"><h4></h4></div>
-            <div class="collum"><h4></h4></div>
-        </div>
-    </footer>
+		<div class="slideShow">
+            <div class="slide"><p></p><img src="#" alt="Alternate Text" /></div>
+            <div class="slide"><p></p><img src="#" alt="Alternate Text" /></div>
+            <div class="slide"><p></p><img src="#" alt="Alternate Text" /></div>
+            <a class="previous" onclick="plusSlide(-1)"><</a>
+            <a class="next" onclick="plusSlide(1)">></a>
+		</div>
+	</div>
+
+	<footer>
+        <div></div>
+	</footer>
 </body>
 </html>
