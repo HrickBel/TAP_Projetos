@@ -1,34 +1,96 @@
 ﻿:root{
+    --background:#cccccc05;
+    --navBarBG:#c8c8c8ee;
+    --menuItemColor:#141414bb;
+    --menuItemColorEnable:#111111;
+    --menuColor:#a1a1a188;
+    --defaultFont:arial;
+    --langMenu:regular;
+}
+body{
+    margin: 0;
+    font-family:Arial;
+    background:var(--background);
+}
+/*navbar*/
+nav{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    background:var(--navBarBG);
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:30px;
+}
+.logo:hover{fill:#121212af;}
+/*dropdown menu*/
+.dropbtn{
+    text-decoration: none;
+    font-size: 1.2vw;
+    padding-left: 20px;
+    color: var(--menuItemColor);
 
 }
-
-body {
-    font-family: var(--defFont);
-    /*background: var(--default);*/
+.dropbtn:hover {
+    color: var(--menuItemColorEnable);
 }
-
 .dropdown {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    & a{
-        display:block;
-        margin-right:2.8vw;
-        text-decoration:none;
-        font-size:1.8vw;
-    }
-    & svg{
-        margin-right:3vw;
-    }
-}
-.dropdown{
-    position:sticky;
-    position:relative;
-}
-.listSubitem-product, .listSubitem-solutions, .listSubitem-support, .listItem-search, .listItem-lang {
+    background: var(--menuColor);
     display: none;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: auto;
+    height: auto;
 }
-.dropdown:hover {
-    display:block;
+/*highlights*/
+.new {
+    display: flex;
+    justify-content: center;
+    position:relative;
+    box-shadow: inset 0px 0px 24px 0px rgba(0,0,0,0.0.14);    
+    padding-top: 25px;
+    padding-bottom:3px;
+}
+.title-news{
+    position:absolute;
+    font-weight:bolder;
+    font-size:50px;
+    left:6.5%;
+    top:8.2%;
+}
+.projects{
+    background:var(--menuColor);
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.c-projects{
+    padding-left:50px;
+    z-index:1;
+}
+img.c-projects {
+    width ="280px"; 
+    height="120px";
+    z-index:-1;
+}
+/*footer*/
+.informations{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin-top:10px;
+    background:gray;
+}
+.info-content{
+    display:flex;
+    flex-direction:column;
+    padding-top:12px;
+    padding-left:55px;
+    & a{
+        text-decoration: none;
+        color: white;
+        font-size:20px;
+        padding-bottom:4px;
+    }
 }
