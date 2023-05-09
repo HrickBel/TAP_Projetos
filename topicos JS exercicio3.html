@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: rgb(129, 192, 255);
+        }
+        table, th,td{
+            border-collapse: collapse;
+            border: 1px collapse black;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema da Lanchonete</title>
+</head>
+<body>
+    <h2>Comanda do cliente:</h2>
+    <form>
+        <table >
+            <tr>
+                <th>
+                    #
+                </th>
+                <th>
+                    <b>Descrição</b>
+                </th>
+                <th>
+                    Qtd.
+                </th>
+                <th>
+                    <b>Preço</b>
+                </th>
+                <th>
+                    <b>Subtotal</b>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    <select>
+                        <option value="Cachorro-quente">Cachorro-quente</option>
+                        <option value="X-tudo">X-tudo</option>
+                        <option value="Coca-cola">Coca-cola</option>
+                        <option value="Pepsi">Pepsi</option>
+                        <option value="Milkshake">Milkshake</option>
+                        <option value="Batata frita">Batata frita</option>
+                        <option value="coxinha">coxinha</option>
+                    </select>
+                </td>
+                <td>
+                    <input class="qnt" type="text" onblur="getSub()" placeholder="quantidade">
+                </td>
+                <td>
+                    <input class="price" type="text" onblur="getSub()" placeholder="preco unitário">
+                </td>
+                <td>
+                    <input class="Subtotal" type="text"  placeholder="preco total" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2
+                </td>
+                <td>
+                    <select>
+                        <option value="Cachorro-quente">Cachorro-quente</option>
+                        <option value="X-tudo">X-tudo</option>
+                        <option value="Coca-cola">Coca-cola</option>
+                        <option value="Pepsi">Pepsi</option>
+                        <option value="Milkshake">Milkshake</option>
+                        <option value="Batata frita">Batata frita</option>
+                        <option value="coxinha">coxinha</option>
+                    </select>
+                </td>
+                <td>
+                    <input class="qnt" type="text" onblur="getSub()" placeholder="quantidade">
+                </td>
+                <td>
+                    <input class="price" type="text" onblur="getSub()" placeholder="preco unitário">
+                </td>
+                <td>
+                    <input class="Subtotal" type="text"  placeholder="preco total" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    3
+                </td>
+                <td>
+                    <select>
+                        <option value="Cachorro-quente">Cachorro-quente</option>
+                        <option value="X-tudo">X-tudo</option>
+                        <option value="Coca-cola">Coca-cola</option>
+                        <option value="Pepsi">Pepsi</option>
+                        <option value="Milkshake">Milkshake</option>
+                        <option value="Batata frita">Batata frita</option>
+                        <option value="coxinha">coxinha</option>
+                    </select>
+                </td>
+                <td>
+                    <input class="qnt" type="text" onblur="getSub()" placeholder="quantidade">
+                </td>
+                <td>
+                    <input class="price" type="text" onblur="getSub()" placeholder="preco unitário">
+                </td>
+                <td>
+                    <input class="Subtotal" type="text"  placeholder="preco total" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    4
+                </td>
+                <td>
+                    <select>
+                        <option value="Cachorro-quente">Cachorro-quente</option>
+                        <option value="X-tudo">X-tudo</option>
+                        <option value="Coca-cola">Coca-cola</option>
+                        <option value="Pepsi">Pepsi</option>
+                        <option value="Milkshake">Milkshake</option>
+                        <option value="Batata frita">Batata frita</option>
+                        <option value="coxinha">coxinha</option>
+                    </select>
+                </td>
+                <td>
+                    <input class="qnt" type="text" onblur="getSub()" placeholder="quantidade">
+                </td>
+                <td>
+                    <input class="price" type="text" onblur="getSub()" placeholder="preco unitário">
+                </td>
+                <td>
+                    <input class="Subtotal" type="text"  placeholder="preco total" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    5
+                </td>
+                <td>
+                    <select>
+                        <option value="Cachorro-quente">Cachorro-quente</option>
+                        <option value="X-tudo">X-tudo</option>
+                        <option value="Coca-cola">Coca-cola</option>
+                        <option value="Pepsi">Pepsi</option>
+                        <option value="Milkshake">Milkshake</option>
+                        <option value="Batata frita">Batata frita</option>
+                        <option value="coxinha">coxinha</option>
+                    </select>
+                </td>
+                <td>
+                    <input class="qnt" type="text" onblur="getSub()" placeholder="quantidade">
+                </td>
+                <td>
+                    <input class="price" type="text" onblur="getSub()" placeholder="preco unitário">
+                </td>
+                <td>
+                    <input class="Subtotal" type="text"  placeholder="preco total" disabled>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <b>TOTAL R$<span class="total"></span></b>
+    <script>
+        let VET_qnt = document.getElementsByClassName("qnt"); 
+        let VET_Price = document.getElementsByClassName("price"); 
+        let VET_Sub = document.getElementsByClassName("Subtotal");
+
+        function getSub(){
+            for(let i = 0; i < VET_Sub.length;i++){
+                VET_Sub[i].value = parseFloat(VET_qnt[i].value) * parseFloat(VET_Price[i].value);
+            }
+        }
+    </script>
+</body>
+</html>
